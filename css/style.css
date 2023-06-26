@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&family=Silkscreen&family=Tilt+Prism&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.body {
+    background: url(../resource/bg.jpg);
+    min-height: 100vh;
+    background-size: 100 vw vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#scoreBox {
+    position: absolute;
+    top: 9px;
+    right: 200px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Tilt Prism', cursive;
+}
+
+#highscoreBox {
+    position: absolute;
+    top: 49px;
+    right: 200px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Tilt Prism', cursive;
+}
+
+#board {
+    background: linear-gradient(rgb(167, 208, 167), rgb(206, 206, 159));
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+
+.head {
+    background: linear-gradient(red, yellow);
+    border: 2px solid purple;
+    transform: scale(1.02);
+    border-radius: 5px;
+}
+
+.snake {
+    background-color: purple;
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+
+.food {
+    background: linear-gradient(red, purple);
+    border: .25vmin solid black;
+    border-radius: 8px;
+}
